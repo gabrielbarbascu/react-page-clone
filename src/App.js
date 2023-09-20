@@ -1,23 +1,44 @@
-import './App.css';
-import logo from './logo.svg';
+import { useState } from 'react';
+import styles from './App.css';
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main>
+        <section className={styles.heroSection}>
+          <div className={styles.container}>
+            <header>
+              <nav>
+                <a href="/#">logo</a>
+                <ul>
+                  <li>
+                    <a href="/#">Product</a>
+                  </li>
+                  <li>
+                    <a href="/#">Use cases</a>
+                  </li>
+                  <li>
+                    <a href="/#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="/#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/#">FAQ & Support</a>
+                  </li>
+                </ul>
+                <div>
+                  <a href="/#">Sign in</a>
+                  <a href="/#">Sign up</a>
+                </div>
+              </nav>
+            </header>
+            Section1
+          </div>
+        </section>
+        <section>Section2</section>
+      </main>
+      <footer>footer</footer>
+    </>
   );
 }
